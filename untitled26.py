@@ -186,8 +186,6 @@ var_mod = ['Item_Fat_Content','Outlet_Location_Type','Outlet_Size','Item_Type_Co
 for i in var_mod:
     df[i] = encode.fit_transform(df[i])
 
-df = pd.get_dummies(df,columns =)
-
 df.head()
 
 df=df.drop(["Item_Identifier","Item_Type","Outlet_Identifier"],axis=1)
