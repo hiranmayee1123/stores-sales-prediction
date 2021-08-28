@@ -10,7 +10,7 @@ Original file is located at
 import pandas as pd
 import numpy as np
 
-df=pd.read_csv("/content/Train.csv")
+df=pd.read_csv("https://raw.githubusercontent.com/hiranmayee1123/stores-sales-prediction/main/Train.csv")
 
 df.head()
 
