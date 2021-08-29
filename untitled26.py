@@ -178,10 +178,4 @@ df['Outlet_Year'].describe()
 
 
 
-var_mod = ['Item_Fat_Content','Outlet_Location_Type','Outlet_Size','Item_Type_Combined','Outlet_Type','Outlet']
-for i in var_mod:
-    df[i] = encode.fit_transform(df[i])
 
-df.head()
-
-df=df.drop(["Item_Identifier","Item_Type","Outlet_Identifier"],axis=1)
