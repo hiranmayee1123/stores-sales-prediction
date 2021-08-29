@@ -48,9 +48,7 @@ df.fillna(df.mode(), inplace=True)
 
 df['Outlet_Size'].fillna(df['Outlet_Size'].value_counts().index[0],inplace=True)
 
-for i in df.columns:
-  if df[i].dtypes=="object":
-    df[i]= label_encoder.fit_transform(df[i])
+
 
 from sklearn import preprocessing
 # label_encoder object knows how to understand word labels. 
