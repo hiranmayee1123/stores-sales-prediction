@@ -176,11 +176,7 @@ df['Item_Fat_Content'] = df['Item_Fat_Content'].replace({'LF':'Low Fat','reg':'R
 df['Outlet_Year'] = 2019 - df['Outlet_Establishment_Year']
 df['Outlet_Year'].describe()
 
-from sklearn.preprocessing import LabelEncoder
 
-encode = LabelEncoder()
-
-df['Outlet'] = encode.fit_transform(df['Outlet_Identifier'])
 
 var_mod = ['Item_Fat_Content','Outlet_Location_Type','Outlet_Size','Item_Type_Combined','Outlet_Type','Outlet']
 for i in var_mod:
